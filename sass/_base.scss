@@ -1,0 +1,29 @@
+@font-face {
+	font-family: Corona;
+	src: url('../assets/fonts/Corona.ttf');
+}
+
+@font-face {
+	font-family: Rubik;
+	src: url('../assets/fonts/Rubik.ttf');
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	color: inherit;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $color-primary-chrome;
+	height: 100vh;
+	color: $color-primary-blue;
+}

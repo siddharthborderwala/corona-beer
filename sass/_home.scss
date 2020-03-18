@@ -1,0 +1,151 @@
+@import "variables";
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	flex: 0 0 90vw;
+	justify-content: space-between;
+	align-items: center;
+	height: 15rem;
+	margin-bottom: 5rem;
+
+	&__logo--img {
+		width: 15rem;
+		height: 15rem;
+		margin-left: 5rem;
+	}
+
+	&__menu--img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 2.9rem;
+		height: 2.9rem;
+		margin-right: 10rem;
+		z-index: 100;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.main {
+	display: flex;
+	flex-direction: row;
+	max-width: 140rem;
+	margin: 0 auto;
+
+	&__callout {
+		display: flex;
+		flex: 0 0 50%;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	&__beer-images {
+		display: flex;
+		flex: 0 0 50%;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__heading-primary {
+		text-transform: uppercase;
+		font-family: Corona;
+		line-height: 0.7;
+		margin-bottom: 2rem;
+
+		&--small {
+			font-size: 10rem;
+		}
+
+		&--big {
+			font-size: 29.5rem;
+		}
+	}
+
+	&__order-now {
+		text-align: start;
+		margin-left: 2rem;
+		font-family: Rubik;
+		font-size: 4.5rem;
+		line-height: 1.5;
+	}
+
+	&__mission {
+		text-align: start;
+		margin-left: 2rem;
+		font-family: Rubik;
+		margin-top: 1.5rem;
+		width: 50%;
+		line-height: 1.2;
+
+		&--title {
+			font-size: 2rem;
+		}
+
+		&--description {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+.order-now-links {
+	display: flex;
+	flex-direction: row;
+	margin-left: 2rem;
+}
+
+.order-now__btn {
+	border: 4px solid $color-primary-blue;
+	text-transform: uppercase;
+	font-family: Corona;
+	font-size: 4.25rem;
+	display: inline-block;
+	flex: 1;
+	padding: .5rem 4rem;
+	text-decoration: none;
+	margin: 0 1.25rem;
+
+	&--myself {
+		background-color: $color-primary-blue;
+		color: $color-primary-chrome;
+		margin-left: 0;
+	}
+
+	&--town {
+		background-color: $color-primary-chrome;
+		color: $color-primary-blue;
+	}
+}
+
+.scraped-surface {
+	width: 100%;
+	margin-top: -5rem;
+}
+
+.beer-bottle {
+	position: absolute;
+	margin-top: -22rem;
+	bottom: 0;
+
+	&--left {
+		height: 84vh;
+		left: 27%;
+		z-index: 20;
+	}
+
+	&--center {
+		height: 95vh;
+		left: 35%;
+		z-index: 50;
+	}
+
+	&--right {
+		height: 75vh;
+		right: 18%;
+		z-index: 20;
+	}
+}
